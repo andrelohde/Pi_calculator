@@ -8,35 +8,6 @@
 
 using namespace std;
 
-/* def pi_gl(m):
-    a = Decimal('1') 
-    b = Decimal('0.5').sqrt()
-    t = Decimal('0.25')
-    p = Decimal('1')
-    e = Decimal('0')
-    E = Decimal('1')
-    
-    C = Decimal('1')
-    
-    #iteration
-    i = 0
-    while(abs(E-e) > Decimal(f'1e-{m}')):
-        e = E
-        A = (a+b)/Decimal('2')
-        B = Decimal(a*b).sqrt()
-        T = t - p * (a - A)**2
-        P = 2*p
-        
-        E = (A + B)**2 / (4*T) 
-        
-        a = A
-        b = B
-        t = T
-        p = P
-        i += 1
-    
-    return E, i */
-	
 void pi_gl() {
 	mpf_t a, A, b, B, C, e, E, t, T, p, P, y;
 	mpz_t i, j;
